@@ -1,0 +1,24 @@
+{
+  "name": "dragonforge",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Windows-first AI coding agent orchestrator for safe local development.",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "npm run build -w @dragonforge/shared && npm run build -w @dragonforge/ui && npm run build -w @dragonforge/server && npm run build -w @dragonforge/dashboard",
+    "dev": "npm run build -w @dragonforge/shared && concurrently -n server,dashboard -c green,cyan \"npm run dev -w @dragonforge/server\" \"npm run dev -w @dragonforge/dashboard\"",
+    "doctor": "powershell.exe -NoProfile -ExecutionPolicy Bypass -File scripts/doctor.ps1",
+    "launch": "powershell.exe -NoProfile -ExecutionPolicy Bypass -File scripts/launch.ps1"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "typescript": "^5.4.5"
+  },
+  "engines": {
+    "node": ">=20.0.0",
+    "npm": ">=10.0.0"
+  }
+}

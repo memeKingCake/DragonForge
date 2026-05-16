@@ -1,0 +1,29 @@
+{
+  "defaults": {
+    "read": "auto",
+    "search": "auto",
+    "write": "approval",
+    "build": "preview",
+    "test": "preview",
+    "install": "approval",
+    "gitRead": "auto",
+    "gitWrite": "approval",
+    "gitCheckpoint": "preview",
+    "delete": "approval",
+    "network": "approval",
+    "outsideProjectWrite": "blocked",
+    "unknown": "preview"
+  },
+  "blockedPatterns": [
+    "Remove-Item -Recurse -Force",
+    "rm -rf",
+    "rm -r",
+    "git reset --hard",
+    "git clean -fd",
+    "git checkout -- .",
+    "Set-ExecutionPolicy",
+    "format ",
+    "diskpart"
+  ],
+  "rememberedApprovals": []
+}

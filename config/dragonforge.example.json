@@ -1,0 +1,21 @@
+{
+  "server": {
+    "host": "127.0.0.1",
+    "port": 4545
+  },
+  "dashboard": {
+    "port": 5173
+  },
+  "install": {
+    "target": "C:\\AiAgents\\DragonForge"
+  },
+  "git": {
+    "branchPrefix": "dragonforge",
+    "checkpointMode": "branch"
+  },
+  "paths": {
+    "projects": "projects",
+    "logs": "logs",
+    "config": "config"
+  }
+}

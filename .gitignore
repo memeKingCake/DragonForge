@@ -1,0 +1,25 @@
+node_modules/
+.npm-cache/
+dist/
+.turbo/
+.vite/
+*.log
+
+# Machine-specific runtime configuration.
+config/*.json
+!config/*.example.json
+config/*.tmp
+config/*.json.*.tmp
+
+# Local project registrations and managed workspaces.
+projects/registered.json
+projects/*.tmp
+projects/*.json.*.tmp
+projects/workspaces/*
+!projects/workspaces/.gitkeep
+
+# Runtime logs, transcripts, attachments, and audit files.
+logs/**
+!logs/
+!logs/**/
+!logs/**/.gitkeep

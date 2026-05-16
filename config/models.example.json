@@ -1,0 +1,80 @@
+{
+  "providers": {
+    "claude": {
+      "displayName": "Claude",
+      "enabled": true,
+      "cliPath": null,
+      "mode": "auto",
+      "model": null,
+      "reasoningEffort": null,
+      "args": [],
+      "roles": [
+        "architect",
+        "reviewer"
+      ]
+    },
+    "codex": {
+      "displayName": "Codex",
+      "enabled": true,
+      "cliPath": null,
+      "mode": "auto",
+      "model": null,
+      "reasoningEffort": null,
+      "args": [],
+      "roles": [
+        "explorer",
+        "implementer",
+        "build-runner"
+      ]
+    },
+    "kimi": {
+      "displayName": "Kimi",
+      "enabled": true,
+      "cliPath": null,
+      "mode": "guided",
+      "model": null,
+      "reasoningEffort": null,
+      "args": [],
+      "roles": [
+        "architect",
+        "explorer",
+        "reviewer"
+      ]
+    },
+    "deepseek": {
+      "displayName": "DeepSeek",
+      "enabled": false,
+      "cliPath": null,
+      "mode": "disabled",
+      "model": null,
+      "reasoningEffort": null,
+      "args": [],
+      "roles": []
+    }
+  },
+  "routing": {
+    "architect": [
+      "claude",
+      "codex",
+      "kimi"
+    ],
+    "explorer": [
+      "codex",
+      "kimi",
+      "claude"
+    ],
+    "implementer": [
+      "codex",
+      "claude"
+    ],
+    "build-runner": [
+      "codex",
+      "claude"
+    ],
+    "reviewer": [
+      "claude",
+      "codex",
+      "kimi"
+    ]
+  }
+}
