@@ -96,7 +96,6 @@ Planned next:
 
 - [Technical manual](docs/TECHNICAL_MANUAL.md)
 - [Architecture notes](docs/ARCHITECTURE.md)
-- [Publishing guide](docs/PUBLISHING_GUIDE.md)
 - [Original blueprint](DRAGONFORGE_BLUEPRINT.md)
 
 ## Development Commands
