@@ -23,3 +23,6 @@ logs/**
 !logs/
 !logs/**/
 !logs/**/.gitkeep
+
+# Visual Studio workspace state.
+.vs/

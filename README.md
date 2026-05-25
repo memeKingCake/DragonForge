@@ -35,7 +35,7 @@ config/             Runtime config plus shareable examples
 projects/           Registered project state and managed workspaces
 logs/               Runtime logs, transcripts, audits
 scripts/            Windows launch and helper scripts
-docs/               Architecture, manual, and publishing notes
+docs/               Architecture notes and technical manual
 ```
 
 ## Quick Start

@@ -220,7 +220,7 @@ DragonForge uses JSON files for MVP persistence:
 
 Writes are performed through temporary files followed by rename, which reduces the chance of partial writes. Corrupt JSON is backed up and replaced with defaults when possible.
 
-Public repositories should commit the `*.example.json` templates, not machine-specific runtime files.
+Version control should include the `*.example.json` templates, not machine-specific runtime files.
 
 ## 9. API Reference
 

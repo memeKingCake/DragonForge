@@ -25,4 +25,4 @@ Agent tasks also record activity state and a heartbeat timestamp while connector
 
 This MVP intentionally uses JSON files so the behavior is inspectable and easy to reset during development. A later install profile can map the same structure to `C:\AiAgents\DragonForge`.
 
-Public repositories should commit only the `*.example.json` configuration templates; local runtime JSON, project registrations, transcripts, and audit files remain machine-specific state.
+Version control should include only the `*.example.json` configuration templates; local runtime JSON, project registrations, transcripts, and audit files remain machine-specific state.
